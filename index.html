@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foot Flair</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"><span>Foot</span><span>Flair</span></div>
+
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="btn" onclick="shopNow()">Shop Now</button>
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Step Into <span>Style</span></h1>
+      <p>Discover premium sneakers designed for comfort, confidence and bold street fashion.</p>
+
+      <div class="hero-buttons">
+        <button class="btn" onclick="goToCollections()">Explore Now</button>
+        <button class="btn outline" onclick="newCollection()">New Collection</button>
+      </div>
+
+      <p id="message"></p>
+    </div>
+  </section>
+
+  <section class="products" id="collections">
+    <h2>Popular Collection</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772">
+        <h3>Street Runner</h3>
+        <p>Bold sneakers for everyday street style.</p>
+        <button class="btn" onclick="buyShoe('Street Runner')">Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5">
+        <h3>Fire Kicks</h3>
+        <p>Hot design with next-level comfort.</p>
+        <button class="btn" onclick="buyShoe('Fire Kicks')">Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+        <h3>Classic White</h3>
+        <p>Clean, premium and perfect for all outfits.</p>
+        <button class="btn" onclick="buyShoe('Classic White')">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Foot Flair</h2>
+    <p>
+      Foot Flair is made for sneaker lovers who want comfort, style and confidence.
+      Our shoes are designed for daily wear, street fashion and bold personalities.
+    </p>
+    <button class="btn" onclick="aboutMessage()">Know More</button>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <textarea id="userMessage" placeholder="Enter your message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Foot Flair. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
